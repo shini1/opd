@@ -8,6 +8,7 @@ $link = mysqli_connect("localhost", "root", "", "opd");
 if($link === false){
  die("ERROR: Could not connect. " . mysqli_connect_error());
 }
+$sql="INSERT INTO users (username, password, fname,lname )VALUES($_POST["user_id"],$_POST["password"],$_POST["first_name"],$_POST["last_name"])";
         if(mysqli_query($link, $sql)){
  echo "Records added successfully.";
 } else{
