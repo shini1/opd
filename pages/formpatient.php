@@ -11,10 +11,8 @@
     <br>
     <div class="form-group col-md-6">
     <div class="panel panel-primary">
+         <div class="panel-heading"><h1 class="myheading"> Registration form </h1> </div>
          
-        <div class="panel-heading">
-            <h1 class="myheading">Registration form </h1>
-        </div>
         
         <div class="panel-body">
             
