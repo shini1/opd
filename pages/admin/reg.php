@@ -3,8 +3,8 @@
 <html>
 <head>
 <title> REGISTRATION FORM</title>
-<link rel="stylesheet" type="text/css" href=".../css/bootstrap.css"
-<link rel="stylesheet" type="text/css" href=".../css/styl1.css"
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"
+<link rel="stylesheet" type="text/css" href="../../css/style.css"
 
       
 </head>
