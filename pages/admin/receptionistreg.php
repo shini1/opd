@@ -34,6 +34,10 @@
         <div class="form-group" >
         Password  : <input type="password" class="form-control" name="password" />
         </div>
+        <div class="form-group" >
+            <label>Confirm password</label>
+            <input type="password" class="form-control" name="confirm_password" />
+        </div>
          <br><br>
          <button class="btn btn-primary" type="submit">Submit 
          </button>
