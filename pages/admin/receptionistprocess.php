@@ -1,7 +1,7 @@
 <?php
 
 if (empty($_POST['user_id'])) {//check user_id field empty or not
-    echo = "Empty Username";
+    echo "Empty Username";
 } elseif (empty($_POST['password']) || empty($_POST['confirm_password'])) {
     echo "Empty Password";
 } elseif ($_POST['password'] !== $_POST['confirm_password']) {
