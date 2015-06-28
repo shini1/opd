@@ -41,9 +41,9 @@ require('../config/mysql.php');
 $sql="INSERT INTO users ( username , password, fname, lname,email,department )VALUES( '$username','$encrypted_password','$fname','$lname','$email','$department')";
  $sql2 = "INSERT INTO assigned_roles ( username , role_id )VALUES( '$username', 3 )";    
   if (mysqli_query($link, $sql)&& mysqli_query($link, $sql2) ) {
-         if(mysqli_query($link, $sql)){
+         
             echo "Records added successfully.";
-             } 
+             
             }else{
                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
               }

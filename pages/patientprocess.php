@@ -55,10 +55,10 @@ require('config/mysql.php');
         } else {
 $sql="INSERT INTO users ( username , password, fname, lname,place,email,address,phn,age,sex )VALUES( '$username','$encrypted_password','$fname','$lname','$place','$email','$address','$phn','$age','$sex')";
   $sql2 = "INSERT INTO assigned_roles ( username , role_id )VALUES( '$username', 1 )"; 
-    if (mysqli_query($link, $sql)&& mysqli_query($link, $sql2) ) {
-         if(mysqli_query($link, $sql)){
+    if (mysqli_query($link, $sql)&& mysqli_query($link, $sql2) ) 
+    {
             echo "Records added successfully.";
-             } 
+             
             }else{
                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
               }
