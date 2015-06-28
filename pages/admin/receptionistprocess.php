@@ -1,11 +1,11 @@
 <?php
 
 if (empty($_POST['user_id'])) {//check user_id field empty or not
-    $this->errors[] = "Empty Username";
+    echo = "Empty Username";
 } elseif (empty($_POST['password']) || empty($_POST['confirm_password'])) {
-    $this->errors[] = "Empty Password";
+    echo "Empty Password";
 } elseif ($_POST['password'] !== $_POST['confirm_password']) {
-    $this->errors[] = "Password does not match";
+    echo"Password does not match";
 } else {
     $fname = $_POST["first_name"];
     $lname = $_POST["last_name"];
