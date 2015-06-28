@@ -16,7 +16,7 @@
         
         <div class="panel-body">
             
-    <form action="process.php" method="post">
+            <form action="patientprocess.php" method="post">
         <div class="form-group" >
         First name :
         <input type="text" class="form-control" name="first_name" />
@@ -35,20 +35,30 @@
         </div>
         <br>
          <div class="form-group" >
-        Place     : <textarea rows="1" class="form-control" cols="10" name="description">
+        Place     : <textarea rows="1" class="form-control" cols="10" name="place">
         </textarea>
         </div>
         <br>
         <div class="form-group" >
-        Email     : <textarea rows="1" class="form-control" cols="20" name="description">
+        Email     : <textarea rows="1" class="form-control" cols="20" name="email">
         </textarea>
         </div>
         <br>
          <div class="form-group" >
-            Address    : <textarea rows="3" class="form-control" cols="30" name="description">
+            Address    : <textarea rows="3" class="form-control" cols="30" name="address">
              </textarea>
         </div>
-         
+        <br>
+         <div class="form-group" >
+            Phone No  : <textarea rows="1" class="form-control" cols="30" name="phn">
+             </textarea>
+        </div>
+         <br>
+        <div class="form-group" >
+         Age  : <textarea rows="1" class="form-control" cols="5" name="age">
+        </textarea>
+        </div>
+        
          <br>
          Sex :
          <input type="radio" name="sex" value="Male">Male 
