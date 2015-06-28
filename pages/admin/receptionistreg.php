@@ -17,7 +17,7 @@
         <h1 class="myheading"> Registration form </h1></div>
         <div class="panel-body">
             
-    <form action="process.php" method="post">
+            <form action="receptionistprocess.php" method="post">
         <div class="form-group" >
         First name :
         <input type="text" class="form-control" name="first_name" />

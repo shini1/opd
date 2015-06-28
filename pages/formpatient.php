@@ -36,12 +36,17 @@
         <br>
          <div class="form-group" >
         Place     : <textarea rows="1" class="form-control" cols="10" name="description">
-        Place..</textarea>
+        </textarea>
+        </div>
+        <br>
+        <div class="form-group" >
+        Email     : <textarea rows="1" class="form-control" cols="20" name="description">
+        </textarea>
         </div>
         <br>
          <div class="form-group" >
             Address    : <textarea rows="3" class="form-control" cols="30" name="description">
-             Address..</textarea>
+             </textarea>
         </div>
          
          <br>

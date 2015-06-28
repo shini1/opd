@@ -17,7 +17,7 @@
         <h1 class="myheading"> Registration form </h1></div>
         <div class="panel-body">
             
-    <form action="process.php" method="post">
+            <form action="doctorprocess.php" method="post">
         <div class="form-group" >
         First name :
         <input type="text" class="form-control" name="first_name" />
@@ -34,7 +34,11 @@
         <div class="form-group" >
         Password  : <input type="password" class="form-control" name="password" />
         </div>
-         <br><br>
+        <br>
+        <div class="form-group" >
+        Department    : <input type="text" class="form-control" name="department" />
+        </div>
+        <br><br>
          <button class="btn btn-primary" type="submit">Submit 
          </button>
      </form>
