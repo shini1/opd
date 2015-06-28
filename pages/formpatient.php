@@ -34,6 +34,11 @@
         Password  : <input type="password" class="form-control" name="password" />
         </div>
         <br>
+        <div class="form-group" >
+            <label>Confirm password</label>
+            <input type="password" class="form-control" name="confirm_password" />
+        </div>
+        <br>
          <div class="form-group" >
         Place     : <textarea rows="1" class="form-control" cols="10" name="place">
         </textarea>
@@ -63,6 +68,7 @@
          Sex :
          <input type="radio" name="sex" value="Male">Male 
          <input type="radio" name="sex" value="Female">Female
+         
          <br><br>
          <button class="btn btn-primary" type="submit">Submit 
          </button>

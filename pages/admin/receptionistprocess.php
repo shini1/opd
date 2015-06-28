@@ -6,7 +6,13 @@ if (empty($_POST['user_id'])) {//check user_id field empty or not
     echo "Empty Password";
 } elseif ($_POST['password'] !== $_POST['confirm_password']) {
     echo"Password does not match";
-} else {
+}
+elseif (empty($_POST['first_name'])){ 
+    echo "Empty first name";
+}elseif (empty($_POST['last_name'])){ 
+    echo "Empty last name";
+    }
+else {
     $fname = $_POST["first_name"];
     $lname = $_POST["last_name"];
     $username = $_POST["user_id"];

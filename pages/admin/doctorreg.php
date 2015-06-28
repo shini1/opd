@@ -36,6 +36,16 @@
         </div>
         <br>
         <div class="form-group" >
+            <label>Confirm password</label>
+            <input type="password" class="form-control" name="confirm_password" />
+        </div>
+        <br>
+        <div class="form-group" >
+        Email     : <textarea rows="1" class="form-control" cols="20" name="email">
+        </textarea>
+        </div>
+        <br>
+        <div class="form-group" >
         Department    : <input type="text" class="form-control" name="department" />
         </div>
         <br><br>
