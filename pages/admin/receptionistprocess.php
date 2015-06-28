@@ -34,9 +34,9 @@ else {
              $sql2 = "INSERT INTO assigned_roles ( username , role_id )VALUES( '$username', 2 )";
                
             if (mysqli_query($link, $sql)&& mysqli_query($link, $sql2) ) {
-                if (mysqli_query($link, $sql)) {
+              
                     echo "Records added successfully.";
-                }
+           
             } else {
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
