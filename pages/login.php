@@ -16,8 +16,10 @@
         <div class="panel-heading">
         <h1 class="myheading"> Registration form </h1></div>
         <div class="panel-body">
+          
+           
             
-            <form action="loginprocess.php" method="post">
+            <form action="login.php" method="post">
         
         <div class="form-group" >
         User ID     : <input type="text" class="form-control" name="user_id" />
@@ -27,7 +29,7 @@
         Password  : <input type="password" class="form-control" name="password" />
         </div>
          <br><br>
-         <button class="btn btn-primary" type="submit">Submit 
+         <button class="btn btn-primary" type="submit" name="login" value="login">Submit 
          </button>
      </form>
     </div>
