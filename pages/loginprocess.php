@@ -79,17 +79,18 @@ class login {
 		 if (isset($_SESSION['role']) == 1) {
             return "patient";
         }
-		if (isset($_SESSION['role']) == 2) {
+		else if (isset($_SESSION['role']) == 2) {
             return "receptionist";
         }
-		if (isset($_SESSION['role']) == 3) {
+		else if (isset($_SESSION['role']) == 3) {
             return "doctor";
         }
-		if (isset($_SESSION['role']) == 4) {
+		else if (isset($_SESSION['role']) == 4) {
             return "admin";
         }
+		else{
 		
-        return false;
+        return false;}
 		
 	}
 	
