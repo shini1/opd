@@ -34,7 +34,7 @@ class login {
                 echo "USER Verified";
                 while ($obj = $result->fetch_object()) {
                     printf("%s (%s)\n", $obj->fname, $obj->lname);
-                    $_SESSION['user_login_status']=1;
+                   
                     $_SESSION['username']=$obj->username;
                     $_SESSION['fname']=$obj->fname;
                     $_SESSION['lname']=$obj->lname;
@@ -47,9 +47,8 @@ class login {
             if ($num_rows == 1) {
                 echo "USER Identified";
                 while ($obj = $result->fetch_object()) {
-                    printf("%s\n", $obj->role_id);
-                    $_SESSION['username']=$obj->username;
-                    $_SESSION['fname']=$obj->role_id;
+                    $_SESSION['role']=$obj->role_id;
+                     $_SESSION['user_login_status']=1;
                 }
             }
             else{
