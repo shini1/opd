@@ -75,5 +75,23 @@ class login {
        
         return false;
     }
-
+	public function usertype() {
+		 if (isset($_SESSION['role']) == 1) {
+            return "patient";
+        }
+		if (isset($_SESSION['role']) == 2) {
+            return "receptionist";
+        }
+		if (isset($_SESSION['role']) == 3) {
+            return "doctor";
+        }
+		if (isset($_SESSION['role']) == 4) {
+            return "admin";
+        }
+		
+        return false;
+		
+	}
+	
+      
 }
