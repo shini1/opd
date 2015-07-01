@@ -37,7 +37,7 @@ class login {
                    
                     $_SESSION['username']=$obj->username;
                     $_SESSION['fname']=$obj->fname;
-                    $_SESSION['lname']=$obj->lname;
+				$_SESSION['lname']=$obj->lname;}
                     
                     $sql = "SELECT * FROM assigned_roles WHERE username = '$username" ;
                     if ($result = mysqli_query($link, $sql)) {
@@ -54,7 +54,7 @@ class login {
             else{
                 echo 'User not identified';
             }
-            }
+            
                    
                     
                     
