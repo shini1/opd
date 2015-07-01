@@ -19,7 +19,7 @@
           
            
             
-            <form action="login.php" method="post">
+            <form action="index.php" method="post">
         
         <div class="form-group" >
         User ID     : <input type="text" class="form-control" name="user_id" />

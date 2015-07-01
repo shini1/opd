@@ -76,7 +76,7 @@ class login {
         return false;
     }
 	public function usertype() {
-		if (isset($_SESSION['role']){
+		if (isset($_SESSION['role'])){
            if ($_SESSION['role'] == 1) {
             return "patient";
          }
@@ -91,11 +91,11 @@ class login {
         }
 	else{
 		
-        return false;}
+        return "error";}
 		
 	}
 	}	
 	
       
 }
-}
+
