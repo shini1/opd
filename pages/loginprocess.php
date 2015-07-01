@@ -38,6 +38,27 @@ class login {
                     $_SESSION['username']=$obj->username;
                     $_SESSION['fname']=$obj->fname;
                     $_SESSION['lname']=$obj->lname;
+                    
+                    $sql = "SELECT * FROM assigned_roles WHERE username = '$username" ;
+                    if ($result = mysqli_query($link, $sql)) {
+            $num_rows = mysqli_num_rows($result); // no of rows in the result
+
+
+            if ($num_rows == 1) {
+                echo "USER Identified";
+                while ($obj = $result->fetch_object()) {
+                    printf("%s\n", $obj->role_id);
+                    $_SESSION['username']=$obj->username;
+                    $_SESSION['fname']=$obj->role_id;
+                }
+            }
+            else{
+                echo 'User not identified';
+            }
+            }
+                   
+                    
+                    
                 }
             } else {
                 echo "USER not Verified";
